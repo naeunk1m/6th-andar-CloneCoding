@@ -1,2 +1,74 @@
 @import './reset.css';
 @import './common.css';
+
+
+
+.header {}
+.header .header-top {
+    position: absolute;
+    height: 38px;
+    z-index: 10;
+    width: 100%;
+}
+.header .header-top .logo {
+    background: url(../image/main-logo.svg) no-repeat;
+    background-size: 87px auto;
+    width: 87px;
+    height: 23px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header.on .header-btm {
+    position: fixed;
+    display: block;
+}
+.header-btm {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    z-index: 20;
+}
+.btm-list {
+    margin: 10px 0;
+    background: #fff;
+    display: flex;
+    padding: 11px 0 12px 15px;
+}
+.btm-item {
+    font-size: 16px;
+    margin-right: 15px;
+    letter-spacing: -0.05em;
+}
+.btm-item .dot {
+    position: relative;
+    top: -8px;
+    right: -1px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ee5728;
+    content: "";
+}
+.header-btm .btn-more {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    bottom: 0;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(../image/btn_open_middle_bk.png) no-repeat;
+    background-position: center;
+}
+
+.header-btm .menu-all {}
+.header-btm .gnb-item .dot {}
+.header-btm.active .btn-more {}
+
+.group-menu {}
+.group-menu.active {}
+.group-menu .login-wrap{}
