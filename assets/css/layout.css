@@ -11,6 +11,37 @@
     color: #fff;
 }
 
+.top-bnr .link-bnr {
+    background: #000;
+    color: #fff;
+}
+
+.top-bnr .kakaotalk {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 18px;
+    line-height: 20px;
+    margin-left: 7px;
+    margin-bottom: 2px;
+    background-image: url(../image/37f64fbfc314ed5d0d9d8cef21abf2c2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.top-bnr .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    background-image: url(../image/arrow_wh.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 24px;
+    height: 16px;
+}
+
 .header {
     position: absolute;
     top: 40px;
@@ -130,10 +161,10 @@
     position: relative; 
     padding: 6px 12px; 
     background: #F6F6F6; 
-    border-top: 1px solid #dcdcdc; 
+    border-top: 1px solid #dcdcdc;
 }
 
-.header-btm .btm-list {
+.header-btm .btm-all .btm-list {
     display: flex;
     flex-wrap: wrap;
 }
@@ -150,7 +181,7 @@
     letter-spacing: -0.05em;
 }
 
-.header-btm .gnb-item .dot {
+.header-btm .btm-item .dot {
     position: relative;
     top: -8px;
     right: -1px;
@@ -165,6 +196,32 @@
     transform: rotate(180deg);
 }
 
+/* header 고정 */
+
+.header.fixed {
+    position: fixed;
+    top: 0;
+    background: #fff;
+}
+.header.fixed .group-header svg path {
+    fill: #000;
+}
+.header.fixed .header-btm {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* moreBtn누르면 */
+
+.header-btm.active .btm-group .btm-list {
+    visibility: hidden;
+}
+.header-btm.active .btm-group .btn-more {
+    transform: rotate(180deg);
+}
+.header-btm.active .btm-group .menu-all {
+    display: block;
+}
 
 
 .group-menu {
@@ -386,4 +443,62 @@
 .footer .f-support .support-item .kg {
     display: block;
     width: 27px;
+}
+
+
+.fix-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 20;
+    width: 50px;
+    border: 1px solid #e9e9e9;
+    background-color: rgba(255,255,255,0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.fix-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+.fix-btn .btn-kakao {
+    padding: 5px;
+    box-sizing: border-box;
+    border-top: 0;
+}
+.fix-btn .btn-kakao a {
+    height: 30px;
+    background-image: url(../image/kakao_chat.png);
+    background-size: 35px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 4px;
+
+}
+.fix-btn .btn-kakao span {
+    display: block;
+    padding-top: 10px;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    color: #595959;
+    text-align: center;
+}
+.fix-btn .btn-top {
+    padding: 5px;
+    box-sizing: border-box;
+    border-top: 1px solid #e9e9e9;
+}
+.fix-btn .btn-top a {
+    height: 24px;
+    padding: 24px 20px 14px;
+    background-image: url(../image/btn_top.png);
+    background-size: 19px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 4px;
 }

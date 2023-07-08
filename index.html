@@ -11,34 +11,36 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+
 </head>
 
 <body>
     <div class="wrapper">
 
         <div class="top-bnr">
-            <div class="bnr-slide">
-                <a href="" class="link-bnr">
-                    <span class="info-txt">
-                        <span class="txt-bold">[애슬레저 1위]</span>
-                        에어쿨링 레깅스
-                    </span>
-                </a>
-                <a href="" class="link-bnr">
-                    <span class="info-txt">
-                        <span class="txt-bold">[공식몰 단독]</span>
-                        카톡 채널 추가하고
-                        <span class="txt-bold ic">3,000원 할인 받기</span>
-                        <span class="btn"></span>
-                    </span>
-                </a>
+            <div class="swiper bnr-slide">
+                <div class="swiper-wrapper">
+                    <a href="" class="link-bnr">
+                        <span class="info-txt">
+                            <span class="txt-bold">[애슬레저 1위]</span>
+                            에어쿨링 레깅스
+                            <span class="btn"></span>
+                        </span>
+                    </a>
+                    <a href="" class="link-bnr">
+                        <span class="info-txt">
+                            <span class="txt-bold">[공식몰 단독]</span>
+                            카톡 채널 추가하고
+                            <span class="txt-bold ic">3,000원 할인 받기</span>
+                            <span class="kakaotalk"></span>
+                            <span class="btn"></span>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- header -->
-        <header class="header">
+        <header class="header fixed">
 
             <div class="group-header">
                 <!-- 로고상단 -->
@@ -100,7 +102,7 @@
                         <li class="btm-item"><a href="" class="link-menu">우먼즈</a></li>
                         <li class="btm-item"><a href="" class="link-menu">주니어<span class="dot"></span></a></li>
                     </ul>
-                    <button class="btn-more"><span class="blind">버튼</span></button>
+                    <button class="btn-more moreBtn"><span class="blind">버튼</span></button>
                     <span class="menu-all">전체메뉴</span>
                 </div>
                 <div class="btm-all">
@@ -1483,7 +1485,24 @@
             </ul>
         </div>
     </footer>
+
+    <div class="fix-btn">
+        <div class="btn-kakao">'
+            <a href="">
+                <span class="blind">카카오톡상담</span>
+            </a>
+            <span>톡상담</span>
+        </div>
+        <div class="btn-top topBtnFixed">
+            <a href=""><span class="blind">상단으로</span></a>
+        </div>
     </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
