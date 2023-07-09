@@ -89,16 +89,43 @@
 
 /* 메인 슬라이드 영역 */
 
+
 /* 베스트 */
-
-
-
-
 
 .sc-product {}
 .sc-product .h2-title { 
     padding: 50px 16px 22px;
 }
+
+.sc-product .cate-tab {
+    padding: 0 16px;
+    margin: 0;
+}
+.sc-product .cate-tab .tab-best {
+    display: flex;
+    margin-bottom: 22px;
+    padding: 0 2px;
+    font-size: 0;
+}
+
+.sc-product .cate-tab .tab-best .on {
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #B75622;
+    border-radius: 60px;
+}
+
+.sc-product .cate-tab .tab-best > li {
+    width: auto;
+    color: #333;
+    margin-right: 10px;
+    
+}
+.sc-product .cate-tab .tab-best > li a {    
+    padding: 9px 10px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #77797e;}
 
 /* 베스트 */
 

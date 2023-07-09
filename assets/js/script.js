@@ -121,4 +121,26 @@ $('.btn-more').click(function () {
     window.scrollTo({top:0,behavior:'smooth'})
   })
 
+  var PrdSwiper = new Swiper(".swiper.product", {
+    slidesPerView: 2.1,
+    spaceBetween: 10,
+    freeMode:true
+  });
+
+
+  $('.tab-best > *').click(function(e){
+    e.preventDefault();
+
+    // tabName = $(this).attr('data-tab');
+    tabName = $(this).data('tab-menu');
+
+    // $('.tab-nav a').removeClass('on');
+    $(this).addClass('on').siblings().removeClass('on');
+    $(tabName).addClass('on').siblings().removeClass('on');
+
+  })
+
+
+
+
 });
