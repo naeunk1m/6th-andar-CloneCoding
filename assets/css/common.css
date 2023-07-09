@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+.fontB {
+    font-weight: 700;
+}
+
 .product-list {}
 .product-list .product-item{ }
 
@@ -139,4 +143,6 @@
     font-weight: 500;
     letter-spacing: -0.05em;
 }
+
 /* 상품정보 */
+

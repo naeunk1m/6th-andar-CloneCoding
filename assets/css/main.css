@@ -258,4 +258,82 @@
 
 /* 브랜드 스토리 */
 
+/* 레깅스 */
+.cate_container { position: relative; }
+.cate_container .cate-title { padding: 30px 0; margin-left: 20px; }
+.cate_container .product {
+    padding: 0 20px;
+}
+.cate_container .link-more {
+    position: absolute;
+    display: inline-block;
+    top: 30px;
+    right: 5%;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    vertical-align: middle;
+}
 
+.cate_container .link-more::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 11px;
+    margin-left: 3px;
+    background-image: url(../images/arrow-move-gray.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: center;
+
+}
+
+/* 레깅스 */
+
+
+/* 멤버십 */
+
+
+.sc-info.membership {margin-top: 70px;}
+.sc-info.membership a {
+    display: block;
+    background: url(../image/banner-mo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 65px 20px;
+}
+.sc-info.offlinestore {margin-top: 10px;}
+.sc-info.offlinestore a {
+    display: block;
+    background: url(../image/banner-mo\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 65px 20px;
+}
+.sc-info .title{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+.sc-info .desc{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #fff;
+    padding: 15px 0 30px;
+}
+.sc-info .more{
+    border: 1px solid #fff;
+    padding: 7px 25px 8px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* 멤버십 */

@@ -63,6 +63,25 @@ pagination: {
 });
 // 메인 슬라이드 영역
 
+// 전체 메뉴 
+
+$(window).trigger('scroll');
+$('.moreBtn').click(function () {
+  $('.header-btm').toggleClass('active');
+  $('.btm-all').stop().slideToggle();
+});
+
+// 전체 메뉴 
+
+$('.btn-more').click(function () {
+  if($('menu-list').hasClass('active')){
+    $('menu-list.all').addClass('show')
+    $('menu-list.active').removeClass('active')
+  }else{
+    $('menu-list.active').addClass('active')
+    $('menu-list.all').removeClass('show')
+  }
+})
 
 
 
@@ -70,22 +89,6 @@ pagination: {
 
 
 
-
-  $(window).trigger('scroll');
-  $('.moreBtn').click(function () {
-    $('header-btm').toggleClass('active');
-    $('.btm-all').stop().slideToggle();
-  });
-
-  $('btn-more').click(function () {
-    if($('menu-list').hasClass('active')){
-      $('menu-list.all').addClass('show')
-      $('menu-list.active').removeClass('active')
-    }else{
-      $('menu-list.active').addClass('active')
-      $('menu-list.all').removeClass('show')
-    }
-  })
 
   let lastScroll = 0;
 
