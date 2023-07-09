@@ -127,20 +127,25 @@ $('.btn-more').click(function () {
     freeMode:true
   });
 
-
-  $('.tab-best > *').click(function(e){
-    e.preventDefault();
-
-    // tabName = $(this).attr('data-tab');
-    tabName = $(this).data('tab-menu');
-
-    // $('.tab-nav a').removeClass('on');
-    $(this).addClass('on').siblings().removeClass('on');
-    $(tabName).addClass('on').siblings().removeClass('on');
-
-  })
-
-
+  
+  $(document).ready(function () {
+    $('ul.tab-best li').click(function (e) {
+      e.preventDefault();
+  
+      var tabName = $(this).attr('data-tab');
+  
+      $('ul.tab-best li').removeClass('on');
+      $('.product-list.first-list').removeClass('on');
+  
+      $(this).addClass('on');
+      $(tabName).addClass('on');
+  
+      // 탭 내용 표시/숨김 처리
+      $('.product-list').hide(); // 모든 탭 내용 숨김
+      $(tabName).show(); // 선택한 탭 내용 표시
+    });
+  });
+  
 
 
 });

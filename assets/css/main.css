@@ -119,13 +119,14 @@
     width: auto;
     color: #333;
     margin-right: 10px;
-    
-}
-.sc-product .cate-tab .tab-best > li a {    
     padding: 9px 10px;
     font-weight: 500;
     font-size: 15px;
-    color: #77797e;}
+    color: #77797e;
+    
+}
+.sc-product .cate-tab .tab-best > li a {    
+    }
 
 /* 베스트 */
 
@@ -136,6 +137,13 @@
     width: 90%;
     min-width: 1200px;
     margin: 60px auto 120px;
+}
+
+@media (max-width: 1024px) {
+    .sc-coupon {
+        width: 100%;
+        margin: -20px auto 20px;
+    }
 }
 
 .sc-coupon .coupon-bnr{
