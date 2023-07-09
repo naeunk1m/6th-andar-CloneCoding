@@ -7,9 +7,50 @@
     overflow: hidden;
 }
 
+.h2-title {
+    text-align: center;
+    padding: 50px 16px 22px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+}
+
+.badge {
+position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
 .fontB {
     font-weight: 700;
 }
+
+.all-link-btn { 
+    display: block; 
+    padding: 0 38px; 
+    margin: 0 38px; 
+    margin-bottom: 45px; 
+    height: 52px; 
+    line-height: 52px; 
+    border: 1px solid #e0e0e0; 
+    background: #fff; 
+    color: #222; 
+    font-size: 15px; 
+    font-weight: 500; 
+    text-align: center; 
+}
+.all-link-btn::after { 
+    display: inline-block; 
+    width: 19px; height: 19px; 
+    background: url(../image/arrow_right.png) no-repeat; 
+    background-size: cover; 
+    content: ''; 
+}
+
+
 
 .product-list {}
 .product-list .product-item{ }

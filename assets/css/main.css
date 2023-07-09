@@ -91,13 +91,6 @@
 
 /* 베스트 */
 
-.h2-title {
-    font-size: 20px;
-    line-height: 29px;
-    color: #333;
-    letter-spacing: -0.03em;
-    font-weight: 700;
-}
 
 
 
@@ -105,27 +98,6 @@
 .sc-product {}
 .sc-product .h2-title { 
     padding: 50px 16px 22px;
-}
-.sc-product .link-more { 
-    display: block; 
-    padding: 0 38px; 
-    margin: 0 38px; 
-    margin-bottom: 45px; 
-    height: 52px; 
-    line-height: 52px; 
-    border: 1px solid #e0e0e0; 
-    background: #fff; 
-    color: #222; 
-    font-size: 15px; 
-    font-weight: 500; 
-    text-align: center; 
-}
-.sc-product .link-more::after { 
-    display: inline-block; 
-    width: 19px; height: 19px; 
-    background: url(../image/arrow_right.png) no-repeat; 
-    background-size: cover; 
-    content: ''; 
 }
 
 /* 베스트 */
@@ -188,7 +160,6 @@
     border: 1px solid #1e1e1e;
     box-sizing: border-box;
     color: #fff;
-    margin-left: 16px;
     padding: 8px 47px 8px 18px;
     font-size: 14px;
     line-height: 20px;
@@ -260,7 +231,18 @@
 
 /* 레깅스 */
 .cate_container { position: relative; }
-.cate_container .cate-title { padding: 30px 0; margin-left: 20px; }
+.cate_container .cate-title { 
+    padding: 30px 0; 
+    margin-left: 20px; 
+    display: inline-block;
+    padding: 30px 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+}
+
 .cate_container .product {
     padding: 0 20px;
 }
@@ -281,7 +263,7 @@
     width: 15px;
     height: 11px;
     margin-left: 3px;
-    background-image: url(../images/arrow-move-gray.png);
+    background-image: url(../image/icon-move-gr.png);
     background-repeat: no-repeat;
     background-size: 15px auto;
     background-position: center;
