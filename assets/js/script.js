@@ -1,5 +1,35 @@
 $(function () {
 
+// 고정 헤드
+
+let lastScroll = 0;
+
+$(window).scroll(function(){
+  curr = $(this).scrollTop();
+  if(curr > 0){
+      $('.header').addClass('fixed')
+  }else{
+      $('.header').removeClass('fixed')
+  }
+
+  if(curr == 0){
+
+    $('.fix-btn').removeClass('show')
+
+  }else{
+
+    if (curr > lastScroll) {
+      $('.fix-btn').removeClass('show')
+    } else {
+      $('.fix-btn').addClass('show')
+    }
+  }
+  lastScroll = curr;
+
+})
+
+
+// 고정 헤드
 
 // 맨 위 배너 슬라이드
 var BntSwiper = new Swiper(".bnr-slide", {
@@ -63,6 +93,43 @@ pagination: {
 });
 // 메인 슬라이드 영역
 
+// 베스트 상품 탭
+
+$(document).ready(function () {
+  $('ul.tab-best li').click(function (e) {
+    e.preventDefault();
+
+    var tabName = $(this).attr('data-tab');
+
+    $('ul.tab-best li').removeClass('on');
+    $('product-list first-list best-pd').removeClass('on');
+
+    $(this).addClass('on');
+    $(tabName).addClass('on');
+
+    $('.best-pd').hide(); 
+    $(tabName).show(); 
+  });
+});
+
+
+// 베스트 상품 탭
+
+// 카테고리 슬라이드 영역 
+
+$('#topBtn').click(function(e){
+  e.preventDefault();
+  window.scrollTo({top:0,behavior:'smooth'})
+})
+
+var PrdSwiper = new Swiper(".swiper.product", {
+  slidesPerView: 2.1,
+  spaceBetween: 10,
+  freeMode:true
+});
+
+// 카테고리 슬라이드 영역 
+
 // 전체 메뉴 
 
 $(window).trigger('scroll');
@@ -83,69 +150,6 @@ $('.btn-more').click(function () {
   }
 })
 
-
-
-
-
-
-
-
-  let lastScroll = 0;
-
-  $(window).scroll(function(){
-    curr = $(this).scrollTop();
-    if(curr > 0){
-        $('.header').addClass('fixed')
-    }else{
-        $('.header').removeClass('fixed')
-    }
-
-    if(curr == 0){
-
-      $('.fix-btn').removeClass('show')
-
-    }else{
-
-      if (curr > lastScroll) {
-        $('.fix-btn').removeClass('show')
-      } else {
-        $('.fix-btn').addClass('show')
-      }
-    }
-    lastScroll = curr;
-
-  })
-
-  $('#topBtn').click(function(e){
-    e.preventDefault();
-    window.scrollTo({top:0,behavior:'smooth'})
-  })
-
-  var PrdSwiper = new Swiper(".swiper.product", {
-    slidesPerView: 2.1,
-    spaceBetween: 10,
-    freeMode:true
-  });
-
-  
-  $(document).ready(function () {
-    $('ul.tab-best li').click(function (e) {
-      e.preventDefault();
-  
-      var tabName = $(this).attr('data-tab');
-  
-      $('ul.tab-best li').removeClass('on');
-      $('.product-list.first-list').removeClass('on');
-  
-      $(this).addClass('on');
-      $(tabName).addClass('on');
-  
-      // 탭 내용 표시/숨김 처리
-      $('.product-list').hide(); // 모든 탭 내용 숨김
-      $(tabName).show(); // 선택한 탭 내용 표시
-    });
-  });
-  
 
 
 });

@@ -18,7 +18,7 @@
 }
 
 .badge {
-position: absolute;
+    position: absolute;
     right: 0;
     top: 0;
 }
@@ -27,6 +27,12 @@ position: absolute;
 .fontB {
     font-weight: 700;
 }
+
+.t-orange {
+    color: #ee5728;
+}
+
+
 
 .all-link-btn { 
     display: block; 
@@ -108,12 +114,13 @@ position: absolute;
     width: 100%;
     height: 100%;
 }
-.product-list .product-item .icon-box{ position: absolute; top: 0;right: 0; width: 20%; min-width: 40px; }
-.product-list .product-item .icon-box img{}
-
-
-
-
+.product-list .product-item .icon-box{ 
+    position: absolute; 
+    top: 0;
+    right: 0; 
+    width: 20%; 
+    min-width: 40px;
+ }
 
 
 /* 상품정보 */
@@ -127,7 +134,7 @@ position: absolute;
     font-size: 13px;
     line-height: 13px;
     font-weight: 600;
-    color: var(--c-red);
+    color: #8e1f29 !important;
 }
 .product-list .product-item .txt-box .product-title {
     margin: 10px 0;
@@ -135,8 +142,7 @@ position: absolute;
     line-height: 17px;
     font-weight: 400;
     letter-spacing: -0.05em;
-
-    display: -webkit-box;
+    
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
@@ -179,7 +185,7 @@ position: absolute;
     margin-bottom: 5px;
     line-height: 9px;
     font-size: 9px;
-    color: var(--c-red);
+    color: #8e1f28;
     font-weight: bold;
     font-weight: 500;
     letter-spacing: -0.05em;
