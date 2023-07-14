@@ -115,12 +115,13 @@ $(document).ready(function () {
 
 // 베스트 상품 탭
 
-// 카테고리 슬라이드 영역 
 
 $('#topBtn').click(function(e){
   e.preventDefault();
   window.scrollTo({top:0,behavior:'smooth'})
 })
+
+// 카테고리 슬라이드 영역 
 
 var PrdSwiper = new Swiper(".swiper.product", {
   slidesPerView: 2.1,
