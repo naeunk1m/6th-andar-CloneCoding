@@ -37,12 +37,13 @@
 }
 
 .sc-main .swiper .swiper-pagination{
+    display: flex;
     width: 170px;
     left: 50%;
     transform: translateX(-50%);
     bottom: 40px;
 }
-/* .sc-main .swiper .swiper-pagination-bullet{
+.sc-main .swiper .swiper-pagination-bullet{
     margin: 0;
     width: 20px;
     height: 2px;
@@ -50,7 +51,7 @@
     border-radius: 0;
 
 }
-.sc-main .swiper .swiper-pagination-bullet-active{} */
+.sc-main .swiper .swiper-pagination-bullet-active{}
 
 
 .sc-main .swiper-slide img {
@@ -133,18 +134,10 @@
 /* 신규회원 쿠폰 */
 
 .sc-coupon {
-    margin-top: 0 !important;
-    width: 90%;
-    min-width: 1200px;
     margin: 60px auto 120px;
 }
 
-@media (max-width: 1024px) {
-    .sc-coupon {
-        width: 100%;
-        margin: -20px auto 20px;
-    }
-}
+
 
 .sc-coupon .coupon-bnr{
     display: block;
