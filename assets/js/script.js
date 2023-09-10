@@ -24,8 +24,19 @@ $(window).scroll(function(){
       $('.fix-btn').addClass('show')
     }
   }
+
   lastScroll = curr;
 
+
+  $('.btn-top').click(function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+
+    $(window).trigger('scroll');
+  });
 })
 
 
@@ -56,7 +67,7 @@ $(".btn-area .btn-close, .bg").click(function(e){
 // 사이드 메뉴 열기 
 
 // 사이드 메뉴 소메뉴
-$('.show-btn').click(function(e){
+$('.btn-category').click(function(e){
   e.preventDefault();
   $(this).toggleClass('active');
   $(this).siblings(".show-list").stop().slideToggle();
@@ -150,6 +161,7 @@ $('.btn-more').click(function () {
     $('menu-list.all').removeClass('show')
   }
 })
+
 
 
 

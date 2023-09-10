@@ -307,17 +307,17 @@
     padding: 18px 0 11px;
 }
 
-.group-menu .category-area .category-list .category-item {
+.group-menu .category-area .category-item {
     position: relative;
 }
 
-.group-menu .category-area .category-list .category-item .btn-category {
+.group-menu .category-area .category-item .btn-category {
     font-size: 16px;
     padding: 15px 0;
     color: #333;
     line-height: 16px;
     font-weight: 500;
-    display: inline-block;
+    display: block;
 }
 
 .group-menu .category-area .btn-category::after {
@@ -336,7 +336,7 @@
     background: url(../image/btn_open.png) no-repeat;
 }
 
-.group-menu .category-area .category-list .show-btn.active {
+.group-menu .category-area .category-item .btn-category.active .show-btn {
     position: absolute;
     display: block;
     width: 30px;
@@ -715,6 +715,8 @@
 
 
 .fix-btn {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     right: 10px;
     bottom: 50px;
@@ -724,7 +726,7 @@
     background-color: rgba(255,255,255,0.7);
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s;
+    transition: all 0.4s 0.3s;
 }
 .fix-btn.show {
     opacity: 1;
@@ -768,5 +770,6 @@
     background-position: center;
     background-repeat: no-repeat;
     display: block;
-    margin-top: 4px;
+    position: relative;
+    /* margin-top: 4px; */
 }
